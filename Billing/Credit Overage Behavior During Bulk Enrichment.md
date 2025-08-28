@@ -3,6 +3,7 @@
   In some cases, customers may appear to go slightly over their credit limits while
   a large batch is in progress. This is expected and by design.
 </p>
+<strong>Last updated:</strong> August 29, 2025 - Checked details timeliness and accuracy.
 <h2 id="h_01K2HDYQRQXPA65BP8ZHW76ZTX">How it works</h2>
 <ul class="check--list">
   <li>
