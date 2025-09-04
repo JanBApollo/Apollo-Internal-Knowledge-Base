@@ -75,7 +75,7 @@
   </li>
 </ul>
 <h3>Domain Filter Limit</h3>
-<ul class="checl--list">
+<ul class="check--list">
     <li>No more than 1,000 domains when using the company domain filter at a time.</li>
     <li>Error Message: <strong>“Number of domains provided exceeds the limit of 1000.”</strong></li> 
     <li>Users must split their domain search in several batches of no more than 1,000 at a time.</li>
