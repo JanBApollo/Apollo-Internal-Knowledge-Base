@@ -74,6 +74,12 @@
     Error Message: "<strong>You have filtered for Net New people in more than 10000 accounts (Account List/Owner/Stage filters). Our infrastructure cannot accommodate that many accounts on a Net New people search. You are only shown a partial result of your search."</strong>
   </li>
 </ul>
+<h3>Domain Filter Limit</h3>
+<ul class="checl--list">
+    <li>No more than 1,000 domains when using the company domain filter at a time.</li>
+    <li>Error Message: <strong>“Number of domains provided exceeds the limit of 1000.”</strong></li> 
+    <li>Users must split their domain search in several batches of no more than 1,000 at a time.</li>
+</ul>
 <h2>Export CSV limit</h2>
 <ul class="check--list">
   <li>
