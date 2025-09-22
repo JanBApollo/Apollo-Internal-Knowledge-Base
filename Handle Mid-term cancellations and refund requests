@@ -1,0 +1,168 @@
+# Handle Mid-term Cancellations and Refund Requests
+
+Apollo provides a subscription-based service with contracts. Some customer requests mid-term cancellations. Apollo's Terms of Service don't allow mid-term cancellations, but support must carefully review and handle each request for exceptions.
+<hr>
+## Special Conditions
+<a name="sc"></a>
+<p>Escalate cases for exception handling if they involve:</p>
+<ul><li>Threats of legal action (e.g. customer threatens to sue Apollo).</li>
+<li>Alleged contract breach by Apollo.</li>
+<li>Reputational risk (e.g. BBB complaint, public escalation).</li></ul>
+<p>Fraud or abuse concerns may also require escalation:</p>
+<ul><li>Suspicious usage patterns.</li>
+    <li>Multiple refund requests.</li>
+    <li>Evidence of account abuse.</li></ul>
+## Automatic Denial Scenarios
+<p>Early termination and refunds are automatically denied if the request is due to:</p>
+<ul><li>Budget constraints.</li>
+<li>Internal reorganization.</li>
+<li>Company bankruptcy or closure.</li>
+<li>General complaints about unified credits migration, unless tied to a special condition (see above).</li></ul><br>
+<b>Macro Available: Downgrade or Cancel Mid-Cycle - Custom</b>
+<hr>
+## Process
+<ol><li><b>Check for <a href="#sc">Special Conditions</a></b><br>
+If present, gather:
+- Customer's full legal name and entity type.
+- Current ARR.
+- Link to the latest valid Order form.
+- Usage data since renewal.
+- Payment method.
+- Supporting evidence (screenshots, logs, documentation).
+- Communication history. Include support, pushback, and customer responses.
+Escalate to Legal via <a href="https://apollopde.atlassian.net/servicedesk/customer/portal/85/user/login?destination=portal%2F85%2Fgroup%2F405%2Fcreate%2F641">Legal Team Service Desk (JIRA)</a><br>
+<b>Macro Available: Midterm Cancellation: Special Condition</b>.
+<li><b>Determine Sales Ownership</b></li>
+- If sales owns the account, escalate to <a href="https://apolloio.slack.com/archives/C02JV4RBKMM">#sales-team-support</a> with sufficient context and tag the sales owner.<br>
+<b>Macro Available: Midterm Cancellation: Sales Owned</b>.
+<p class="warning--message">Follow up in the thread until the sales owner engages in the customer conversation.</p></li>
+<li><b>No Special Condition</b></li>
+- If no special condition is involved, escalate to the <a href="https://apolloikb.zendesk.com/hc/en-us/articles/39671482574221-How-to-Escalate-to-Different-Teams">Billing Advocates Team</a>.</ol>
+<hr>
+## Billing Advocates
+### Early Termination Requests
+<p class="note--message">If a customer requests cancellation more than 30 days before renewal, loop in the sales owner in the conversation and notify the owner in <a href="https://apolloio.slack.com/archives/C02JV4RBKMM">#sales-team-support</a></p>.
+<div class="tabs">
+  <ul id="tabs-nav">
+    <li><a href="#etr1">Below $15k ARR</a></li>
+    <li><a href="#etr2">$15k to $50k ARR</a></li>
+    <li><a href="#etr3">More than $50k ARR</a></li>
+  </ul>
+  <div id="tabs-content">
+    <div id="etr1" class="tab-content">
+      <p>Cancel if the account is near auto-renewal.</p>
+      <ul>
+        <li>Before renewal: Cancel if requested within 30-90 days before renewal</li>.
+        <li>After renewal: Cancel if requested within 10 days after renewal</li>.
+      </ul>
+    </div>
+    <div id="etr2" class="tab-content">
+<ol>
+    <li>Escalate to Sales in <a href="https://apolloio.slack.com/archives/C02JV4RBKMM">#sales-team-support</a> with request context. Sales may:<br>
+    - Approve support tot ake ownership of the customer or;<br>
+    - Take over the conversation.
+    </li>
+    <li>If legal review is needed, escalate to Legal in <a href="https://apolloio.slack.com/archives/C03R6CVPPUY">#gtm-customer-contracting</a>. Include the following:<br>
+    - Teams.<br>
+    - Signer's first and last name.<br>
+    - Signer's email address.<br>
+    - Full legal name of the company, including entity identifier (e.g. Inc., LLC, GmbH, etc.)<br>
+    - Link to the last order form that was not an upsell.<br>
+    - Context
+    </li>
+</ol>
+    </div>
+    <div id="etr3" class="tab-content">
+      <p>Escalate to Sales in <a href="https://apolloio.slack.com/archives/C02JV4RBKMM">#sales-team-support</a> with request context. Tag their account manager and customer success manager. They will take over the conversation.</p>
+      <p class="warning--message">Follow up in the thread until the sales owner engages in the customer conversation.</p>
+    </div>
+  </div>
+</div>
+<hr>
+<hr>
+### Refund Requests
+<p class="note--message">For non mid-term refunds, see <a href="https://apolloikb.zendesk.com/hc/en-us/articles/37316526683533-Evaluate-process-refund-exceptions">Evaluate & Process Refund Exceptions</a></p>.
+<div class="tabs">
+  <ul id="tabs-nav">
+    <li><a href="#rr1">Below $15k ARR</a></li>
+    <li><a href="#rr2">$15K to $50K ARR</a></li>
+    <li><a href="#rr3">More than $50k ARR or more than $5k refund</a></li>
+  </ul>
+  <div id="tabs-content">
+    <div id="rr1" class="tab-content">
+        <ul>
+            <li>Billing may approve within their limits (See Refund Approval Matrix).</li>
+            <li>Escalate to Jocel or Santiago Taborda in #ama-support-billing via the PA Billing Refund Exception Request workflow if Senior Billing approval is needed.</li>
+            <li><a href="https://apolloikb.zendesk.com/hc/en-us/articles/39671482574221-How-to-Escalate-to-Different-Teams">Escalate to Billing Ops</a> for accounts bound by contract or refunds above senior billing limits.</li>
+        </ul>
+    </div>
+    <div id="rr2" class="tab-content">
+      <p>Customers often reach out to Sales directly. If Support receives the request:</p>
+      <ol>
+        <li>Loop in their account manager if they’re already part of the conversation, or;<br>
+            Ping their account manager in #sales-team-support if they’re not in the Intercom conversation yet.</li>
+        <li>Billing may take ownership of the ticket and open a back-office ticket if approved by sales.</li>
+        <br>
+        Escalate to Legal in <a href="https://apolloio.slack.com/archives/C03R6CVPPUY"></a>#gtm-customer-contracting</a> for exceptional cases.
+    </ol>
+    </div>
+    <div id="rr3" class="tab-content">
+      <p>Escalate to Sales in <a href="https://apolloio.slack.com/archives/C02JV4RBKMM">#sales-team-support</a> with request context. Their account manager will take over the conversation.</p>
+    </div>
+  </div>
+</div>
+<hr>
+## Refund Approval Matrix
+<div class="table-wrapper">
+ <table>
+  <tr>
+  <th style="border: 1px solid #ccc; vertical-align: middle; color: white; background-color: #7a47e7; padding: 15px; font-size: 15px; text-transform: none; text-align: center;">Refund Type</th>
+  <th style="border: 1px solid #ccc; vertical-align: middle; color: white; background-color: #7a47e7; padding: 15px; font-size: 15px; text-transform: none; text-align: center; width: 25%;">Billing Advocate</th>
+  <th style="border: 1px solid #ccc; vertical-align: middle; color: white; background-color: #7a47e7; padding: 15px; font-size: 15px; text-transform: none; text-align: center; width: 25%;">Senior Billing (Jocel or Santi)</th>  
+  <th style="border: 1px solid #ccc; vertical-align: middle; color: white; background-color: #7a47e7; padding: 15px; font-size: 15px; text-transform: none; text-align: center; width: 25%;">Billing Ops</th>
+  <th style="border: 1px solid #ccc; vertical-align: middle; color: white; background-color: #7a47e7; padding: 15px; font-size: 15px; text-transform: none; text-align: center; width: 25%;">CRO and Legal</th></tr>
+  <tr>
+    <td style="font-size: 15px; font-weight:normal;">Cash</td>
+    <td style="font-size: 15px; font-weight:normal;">≤ $1,200</td>
+    <td style="font-size: 15px; font-weight:normal;">≤ $2,400</td>
+    <td style="font-size: 15px; font-weight:normal;">> $2,400</td>
+    <td style="font-size: 15px; font-weight:normal;">> $50K ARR or Special Condition</td>
+  </tr>
+  <tr>
+   <td style="font-size: 15px; font-weight:normal;">Unified Credits</td>
+   <td style="font-size: 15px; font-weight:normal;">≤ 15,000</td>
+   <td style="font-size: 15px; font-weight:normal;">No limit if in policy</td>
+   <td style="font-size: 15px; font-weight:normal;">ARR impact cases</td>
+   <td style="font-size: 15px; font-weight:normal;">> $50K ARR or contract breach
+</td>
+</tr>
+  <tr>
+   <td style="font-size: 15px; font-weight:normal;">Email Credits</td>
+   <td style="font-size: 15px; font-weight:normal;">≤ 10,000</td>
+   <td style="font-size: 15px; font-weight:normal;">≤ 20,000</td>
+   <td style="font-size: 15px; font-weight:normal;">> 20,000</td>
+   <td style="font-size: 15px; font-weight:normal;">> $50K ARR or legal tie
+</td>
+  </tr>
+    <tr>
+   <td style="font-size: 15px; font-weight:normal;">Mobile Credits</td>
+   <td style="font-size: 15px; font-weight:normal;">≤ 100</td>
+   <td style="font-size: 15px; font-weight:normal;">≤ 200</td>
+   <td style="font-size: 15px; font-weight:normal;">> 200</td>
+   <td style="font-size: 15px; font-weight:normal;">Contract disputes</td>
+  </tr>
+    <tr>
+   <td style="font-size: 15px; font-weight:normal;">Export Credits</td>
+   <td style="font-size: 15px; font-weight:normal;">≤ 1,000</td>
+   <td style="font-size: 15px; font-weight:normal;">≤ 2,000</td>
+   <td style="font-size: 15px; font-weight:normal;">> 2,000</td>
+   <td style="font-size: 15px; font-weight:normal;">CRO + Legal required</td>
+  </tr>
+ </table>
+</div>
+<hr>
+## References
+<ul>
+    <li><a href="https://docs.google.com/document/d/1pMqdv1EhhRQ4G6Ame27YUTVKQPhbqnGIKJnrzN_aM4g/edit?tab=t.0#bookmark=kix.ckyga7yjomsq">Apollo Customer Escalation Guidelines</a></li>
+    <li><a href="https://www.notion.so/apolloio/Termination-Document-WIP-21cab2b3b49680659e19db25b366e5c6">Termination Document</a></li>
+</ul>
